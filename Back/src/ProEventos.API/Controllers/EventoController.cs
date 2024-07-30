@@ -1,56 +1,34 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using ProEventos.api.Models;
+using Microsoft.Identity.Client;
+using ProEventos.API.Data;
+using ProEventos.API.models;
 
-namespace ProEventos.api.Controllers
+namespace ProEventos.API.Controllers;
+
+[ApiController]
+[Route("[controller]")]
+public class EventoController : ControllerBase
 {
-    [Route("api/[controller]")]
-    public class EventoController : Controller
+    private readonly DataContext context;
+
+    public EventoController(DataContext context)
     {
-        public IEnumerable<Evento> _evento = new Evento[]
-        {
-                new Evento(){
-                EventoId = 1,
-                Tema = "Angular 11 3 .net 5",
-                Local = "Taquaritinga",
-                Lote = "Primeriro lote",
-                QtdPessoas = 250,
-                DataEvento = DateTime.Now.AddDays(2).ToString(),
-                ImagemURL =  "Imagem1",
-                },
-
-                new Evento(){
-                EventoId = 1,
-                Tema = "Angular 11 3 .net 5",
-                Local = "Taquaritinga",
-                Lote = "Segundo lote",
-                QtdPessoas = 250,
-                DataEvento = DateTime.Now.AddDays(3).ToString(),
-                ImagemURL =  "Imagem2",
-                }
-            };
-
-        public EventoController()
-        {
-
-        }
-
-        [HttpGet]
-        public IEnumerable<Evento> Get()
-        {
-            return _evento;
-        }
-
-        [HttpGet("id")]
-        public IEnumerable<Evento> GetById(int id)
-        {
-            return _evento.Where(evento => evento.EventoId == id);
-        }
-        
-        }
+        this.context = context;
     }
+
+    [HttpGet]
+    public IEnumerable<Evento> Get()
+    {
+        return context.Eventos;
+    }
+
+    [HttpGet("id")]
+    public IEnumerable<Evento> GetById(int id)
+    {
+        return context.Eventos.Where(evento => evento.EventoId == id);
+    }
+
+    
+
+
+}

@@ -1,6 +1,6 @@
-@ProEventos.api_HostAddress = http://localhost:5285
+@ProEventos.API_HostAddress = http://localhost:5254
 
-GET {{ProEventos.api_HostAddress}}/weatherforecast/
+GET {{ProEventos.API_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###

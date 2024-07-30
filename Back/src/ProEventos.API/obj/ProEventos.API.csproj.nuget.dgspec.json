@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\ProEventos\\Back\\src\\ProEventos.api\\ProEventos.api.csproj": {}
+    "C:\\Projetos\\ProEventos\\Back\\src\\ProEventos.API\\ProEventos.API.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\ProEventos\\Back\\src\\ProEventos.api\\ProEventos.api.csproj": {
+    "C:\\Projetos\\ProEventos\\Back\\src\\ProEventos.API\\ProEventos.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\ProEventos\\Back\\src\\ProEventos.api\\ProEventos.api.csproj",
-        "projectName": "ProEventos.api",
-        "projectPath": "C:\\Projetos\\ProEventos\\Back\\src\\ProEventos.api\\ProEventos.api.csproj",
+        "projectUniqueName": "C:\\Projetos\\ProEventos\\Back\\src\\ProEventos.API\\ProEventos.API.csproj",
+        "projectName": "ProEventos.API",
+        "projectPath": "C:\\Projetos\\ProEventos\\Back\\src\\ProEventos.API\\ProEventos.API.csproj",
         "packagesPath": "C:\\Users\\augus\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\ProEventos\\Back\\src\\ProEventos.api\\obj\\",
+        "outputPath": "C:\\Projetos\\ProEventos\\Back\\src\\ProEventos.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\augus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,10 +45,6 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.AspNetCore.OpenApi": {
-              "target": "Package",
-              "version": "[8.0.7, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.7, )"

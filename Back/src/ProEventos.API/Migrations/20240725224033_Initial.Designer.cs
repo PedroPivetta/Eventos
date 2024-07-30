@@ -4,14 +4,14 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using ProEventos.api.Data;
+using ProEventos.API.Data;
 
 #nullable disable
 
-namespace ProEventos.api.Migrations
+namespace ProEventos.API.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240724234853_Initial")]
+    [Migration("20240725224033_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -24,7 +24,7 @@ namespace ProEventos.api.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("ProEventos.api.Models.Evento", b =>
+            modelBuilder.Entity("ProEventos.API.models.Evento", b =>
                 {
                     b.Property<int>("EventoId")
                         .ValueGeneratedOnAdd()

@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("ProEventos.api")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("ProEventos.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a29303357fabb235c9dec23946e84747ff5aac8")]
-[assembly: System.Reflection.AssemblyProductAttribute("ProEventos.api")]
-[assembly: System.Reflection.AssemblyTitleAttribute("ProEventos.api")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6dcf1b0947a701e13147a22b88729d175669d052")]
+[assembly: System.Reflection.AssemblyProductAttribute("ProEventos.API")]
+[assembly: System.Reflection.AssemblyTitleAttribute("ProEventos.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.

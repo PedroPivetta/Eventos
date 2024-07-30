@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace ProEventos.api.Migrations
+namespace ProEventos.API.Migrations
 {
     /// <inheritdoc />
     public partial class Initial : Migration
